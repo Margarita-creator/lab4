@@ -1,4 +1,4 @@
-// Copyright by C-developers1488
+// Copyright by Margarita-creator
 
 #include "header.hpp"
 #include <iostream>
@@ -24,7 +24,7 @@ void Filesystem::all_path(boost::filesystem::path p, std::ostream &out) {
 }
 
 bool Filesystem::handler(boost::filesystem::path p, std::ostream &out) {
-  if (check_fiilename(p)) {
+  if (check_FileName(p)) {
     std::string file_name = p.filename().string();
     std::string account = what_account(file_name);
     std::string data = what_data(file_name);
@@ -40,7 +40,7 @@ bool Filesystem::handler(boost::filesystem::path p, std::ostream &out) {
   }
 }
 
-bool Filesystem::check_fiilename(boost::filesystem::path p){
+bool Filesystem::check_FileName(boost::filesystem::path p){
   const std::string _txt = ".txt";
   const std::string _balance = "balance";
 

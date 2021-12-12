@@ -1,4 +1,4 @@
-// Copyright by C-developers1488
+// Copyright by Margarita-creator
 
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
@@ -13,7 +13,7 @@ class Filesystem {
   explicit Filesystem(const std::string path_to_file);
   void all_path(boost::filesystem::path p, std::ostream &out);
   bool handler(boost::filesystem::path p, std::ostream &out);
-  bool check_fiilename(boost::filesystem::path p);
+  bool check_FileName(boost::filesystem::path p);
   std::string what_account(std::string p);
   std::string what_data(std::string p);
   std::string what_broker(boost::filesystem::path p);
